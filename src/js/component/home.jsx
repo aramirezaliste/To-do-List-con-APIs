@@ -21,7 +21,7 @@ const Home = () => {
     
     //Llamada del metodo PUT (Modificar o Borrar)
     fetch("https://assets.breatheco.de/apis/fake/todos/user/andresramirez", requestOptions)
-      .then(response => response.text())
+      .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
     
